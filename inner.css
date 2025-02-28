@@ -1,0 +1,308 @@
+/* main.css */
+
+:root {
+    font-size: 16px; /* 기본 폰트 크기 */
+    --primary-color: #007bff; /* 기본 색상 */
+    --secondary-color: #f8f9fa; /* 배경 색상 */
+    --text-color: #212529; /* 텍스트 색상 */
+    --header-bg-color: #f1f1f1; /* 헤더 배경 색상 */
+  }
+  
+  
+      /* 기본 설정 */
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+      }
+  header {
+    background-color: var(--header-bg-color);
+    padding: 1.5rem 0;
+    border-bottom: 0.1rem solid #ddd;
+  }
+
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 헤더 아래 그림자 */
+    z-index: 1000; /* 다른 요소들보다 위에 배치 */
+    padding: 10px 0;
+}
+
+.headerLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.main3Contents  h3{
+text-align: center;
+}
+  .headerLeft ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .headerLeft li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .headerLeft li a:hover {
+    color: var(--primary-color);
+  }
+
+  .Login {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    background-color: var(--header-bg-color);
+  }
+  
+  .Login button {
+    padding: 0.5rem 1rem;
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .Login a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: bold;
+  }
+  
+.mainHead h2{
+  text-align: center;
+}
+
+section > .mainHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section> .mainHead h3,
+section> .mainHead a {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.main3{
+    min-height: 100vh;
+}
+.main3 .main3Contents{
+  display: inline-block;
+}
+.main3 .main3Contents .contentBox1{ 
+  display: inline;
+  width: 37rem;
+  float: left;
+  margin-right: 1rem;
+}
+.main3 .main3Contents img{ 
+  width: 38rem;
+  height: 25rem;
+  margin: 1rem 0;
+}
+.main3 .main3Contents .contentBox2{ 
+  display: inline;
+  width: 37rem;
+  float: right;
+}
+
+
+/* 세부 정보 컨테이너 */
+.details {
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-top: 2px solid gray; /* 위쪽 테두리 */
+  margin-bottom: 0.5rem;
+}
+
+
+.detail-item:last-child {
+  border-bottom: none; /* 마지막 항목 아래쪽 테두리 제거 */
+}
+
+/* 라벨 스타일 */
+.label {
+  font-weight: bold;
+  flex: 1;
+  margin-right: 1rem;
+}
+
+/* 값 스타일 */
+.value {
+  flex: 3;
+  text-align: right;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.value span {
+  display: block; /* 각 번호를 개별 줄에 표시 */
+}
+
+
+  section {
+    margin: 10rem auto;
+    max-width: 80rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+  
+  section h3 ,h2{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  section h3 a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  section a:hover {
+    text-decoration: underline;
+  }
+  
+  section div {
+    margin-bottom: 1.5rem;
+  }
+  
+  section div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  section div h3 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  section div p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+/* Footer 스타일 */
+.footer {
+  background-color: #000; /* 배경색 검정 */
+  color: #aaa; /* 기본 텍스트 회색 */
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  position: relative; /* 화면에 고정 */
+      bottom: 0;       /* 화면의 하단에 붙임 */
+      left: 0;         /* 왼쪽 정렬 */
+      width: 100%;  
+}
+
+.footer-container {
+  max-width: 80rem;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* Footer 제목 스타일 */
+.footer-title a {
+  color: #fff; /* 제목 흰색 */
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.footer-title a:hover {
+  text-decoration: underline; /* 호버 시 밑줄 */
+}
+
+/* Footer 내용 스타일 */
+.footer-content p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.footer-content a {
+  color: #aaa; /* 링크 회색 */
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  text-decoration: underline; /* 링크 호버 시 밑줄 */
+}
+
+/* Footer 아이콘 섹션 */
+.footer-icons {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* 아이콘 간격 */
+}
+
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.8; /* 약간 투명 */
+}
+
+.footer-icons img:hover {
+  opacity: 1; /* 호버 시 불투명 */
+}
+
+/* Footer 하단 섹션 */
+.footer-bottom {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #666; /* 하단 텍스트 어두운 회색 */
+}
+
+.footer-bottom a {
+  color: #aaa; /* 링크 회색 */
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline; /* 호버 시 밑줄 */
+}
+.footer-content span {
+  color: #aaa; /* 링크 회색 */
+  border-right: 2px solid gray; /* 위쪽 테두리 */
+  padding-right: 1rem;
+  margin-right: 1rem;
+
+}
