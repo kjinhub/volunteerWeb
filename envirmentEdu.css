@@ -37,7 +37,14 @@
         z-index: 1000; /* 다른 요소들보다 위에 배치 */
         padding: 10px 0;
     }
-    
+    .headerLeft ul li:nth-child(9) a {
+      color:  var(--primary-color);
+      text-decoration: underline;
+    }
+    .headerUnder ul li:nth-child(1) a {
+      color:  var(--primary-color);
+      text-decoration: underline;
+    }
       .headerLeft ul {
         list-style: none;
         margin: 0;

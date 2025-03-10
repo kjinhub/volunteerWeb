@@ -54,7 +54,7 @@
     color:  var(--primary-color);
     text-decoration: underline;
   }
-  .headerUnder ul li:nth-child(1) a {
+  .headerUnder ul li:nth-child(2) a {
     color:  var(--primary-color);
     text-decoration: underline;
   }

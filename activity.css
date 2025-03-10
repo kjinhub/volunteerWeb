@@ -50,6 +50,10 @@
     justify-content: center;
     gap: 2rem;
   } 
+  .headerLeft ul li:nth-child(6) a {
+    color:  var(--primary-color);
+    text-decoration: underline;
+  }
 .headerUnder ul li a{
         text-decoration: none;
         color: var(--text-color);

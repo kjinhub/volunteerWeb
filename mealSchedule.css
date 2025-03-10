@@ -33,7 +33,10 @@
     padding: 1.5rem 0;
     border-bottom: 0.1rem solid #ddd;
   }
-  
+  .headerLeft ul li:nth-child(7) a {
+    color:  var(--primary-color);
+    text-decoration: underline;
+  }
   .headerLeft ul {
     list-style: none;
     margin: 0;

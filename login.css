@@ -19,13 +19,14 @@ body {
 h2 {
     margin-bottom: 20px;
 }
-
 input {
-    width: 100%;
+    width: 50vw;  /* 화면 너비의 50% */
+    max-width: 500px; /* 최대 500px까지만 */  /* 최소 너비 제한 */
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px auto;
     border: 1px solid #ccc;
     border-radius: 5px;
+    display: block;
 }
 
 button {

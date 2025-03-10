@@ -9,6 +9,8 @@ body {
 }
 
 .signup-container {
+    width: 50vw;  /* 화면 너비의 50% */
+    width: 542.12px; /* 최대 500px까지만 */
     background: white;
     padding: 10rem;
     border-radius: 5px;
@@ -21,15 +23,18 @@ h2 {
 }
 
 input {
-    width: 100%;
+    width: 50vw;  /* 화면 너비의 50% */
+    max-width: 500px; /* 최대 500px까지만 */  /* 최소 너비 제한 */
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px auto;
     border: 1px solid #ccc;
     border-radius: 5px;
+    display: block;
 }
 
 button {
-    width: 100%;
+    min-width: 500px;   /* 최소 너비 제한 */
+    width: 97%; 
     padding: 10px;
     background-color: #007bff;
     color: white;

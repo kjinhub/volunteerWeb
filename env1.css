@@ -22,56 +22,69 @@
     color: var(--text-color);
     line-height: 1.6;
       }
-  header {
-    background-color: var(--header-bg-color);
-    padding: 1.5rem 0;
-    border-bottom: 0.1rem solid #ddd;
-  }
-
-
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 헤더 아래 그림자 */
-    z-index: 1000; /* 다른 요소들보다 위에 배치 */
-    padding: 10px 0;
-}
-.headerLeft ul li:nth-child(3) a {
-  color:  var(--primary-color);
-  text-decoration: underline;
-}
-.headerLeft {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-}
-.main3Contents  h3{
-text-align: center;
-}
-  .headerLeft ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .headerLeft li a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 1rem;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  .headerLeft li a:hover {
-    color: var(--primary-color);
-  }
-
+      header {
+        background-color: var(--header-bg-color);
+        padding: 1.5rem 0;
+        border-bottom: 0.1rem solid #ddd;
+      }
+      
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 헤더 아래 그림자 */
+        z-index: 1000; /* 다른 요소들보다 위에 배치 */
+        padding: 10px 0;
+    }
+    .headerLeft ul li:nth-child(9) a {
+      color:  var(--primary-color);
+      text-decoration: underline;
+    }
+    .headerUnder ul li:nth-child(2) a {
+      color:  var(--primary-color);
+      text-decoration: underline;
+    }
+      .headerLeft ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+      .headerUnder ul{
+        list-style-type: none;
+        margin: 2rem 0 0 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      } 
+    .headerUnder ul li a{
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+      }
+      .headerUnder ul li a:hover {
+        color: var(--primary-color);
+      }
+      .headerLeft li a:hover {
+        color: var(--primary-color);
+      }
+      .headerLeft li a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 1rem;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+      
+      .headerLeft li a:hover {
+        color: var(--primary-color);
+      }
   .Login {
     display: flex;
     justify-content: flex-end;
@@ -96,9 +109,7 @@ text-align: center;
     font-weight: bold;
   }
   
-.mainHead h2{
-  text-align: center;
-}
+
 
 section > .mainHead {
   display: flex;
@@ -179,15 +190,21 @@ section> .mainHead a {
 
 
   section {
-    margin: 10rem auto;
+    margin: 10rem auto 5rem;
     max-width: 80rem;
     padding: 2rem;
     background-color: #fff;
     border-radius: 0.5rem;
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin-top: 15rem;
   }
-  
-  section h3 ,h2{
+  section .main3Contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: rem;     */
+  }
+  section h3 {
     font-size: 1.5rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
@@ -204,6 +221,8 @@ section> .mainHead a {
   
   section div {
     margin-bottom: 1.5rem;
+ 
+    margin-right: 2rem;
   }
   
   section div img {
@@ -213,16 +232,13 @@ section> .mainHead a {
     margin-bottom: 0.5rem;
   }
   
-  section div h3 {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
+section div h4{
+  color: #007bff;
+}
+  .mainHead{
+    max-width: 50rem;
   }
-  
-  section div p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
+ 
 /* Footer 스타일 */
 .footer {
   background-color: #000; /* 배경색 검정 */
@@ -309,3 +325,4 @@ section> .mainHead a {
   margin-right: 1rem;
 
 }
+

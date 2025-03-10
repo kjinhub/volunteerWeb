@@ -27,7 +27,19 @@
     padding: 1.5rem 0;
     border-bottom: 0.1rem solid #ddd;
   }
-  
+  .headerLeft ul li:nth-child(1) a {
+    color:  var(--primary-color);
+    text-decoration: underline;
+  }
+  .zoom-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover .zoom-image {
+    transform: scale(1.2); /* 1.2배 확대 */
+}
+
+
   .headerLeft ul {
     list-style: none;
     margin: 0;
