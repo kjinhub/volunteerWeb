@@ -8,7 +8,8 @@
     <title>자원봉사</title>
   </head>
   <body>
-   
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=hxcl5lkamb" defer></script>
+
     <header>
       <div class="Login">
         <button><a href="signUp.html">회원가입</a></button
@@ -183,11 +184,11 @@
 
       <div class="main3Contents">
         <div class="contentBox1">
-          <a href="">          <img src="./img/innerMain.jpeg" alt=""class="zoom-image" />
+          <a href=""><img src="./img/innerMain.jpeg" alt=""class="zoom-image" />
 </a>
         </div>
         <div class="contentBox2">
-          <a href="">          <img src="./img/innerMain2.jpeg" alt="class="zoom-image"" />
+          <a href=""><img src="./img/innerMain2.jpeg" alt="class="zoom-image"" />
 </a>
         </div>
       </div>
@@ -201,15 +202,15 @@
 
       <div class="main3Contents">
         <div class="contentEdu">
-          <a href="">          <img class="Edu" src="./img/innerMain.jpeg" alt="" />
+          <a href=""><img class="Edu" src="./img/innerMain.jpeg" alt="" />
 </a>
         </div>
         <div class="contentEdu">
-          <a href="">          <img class="Edu" src="./img/innerMain2.jpeg" alt="" />
+          <a href=""><img class="Edu" src="./img/innerMain2.jpeg" alt="" />
 </a>
         </div>
         <div  class="contentEdu">
-          <a href="">          <img class="Edu" src="./img/innerMain2.jpeg" alt="" />
+          <a href=""><img class="Edu" src="./img/innerMain2.jpeg" alt="" />
 </a>
         </div>
       </div>
@@ -234,7 +235,7 @@
 
       <div class="main3Contents">
         <div class="contentBox1">
-          <a href="">          <img src="./img/mainLogo.jpeg" alt="" class="zoom-image"/>
+          <a href=""><img src="./img/mainLogo.jpeg" alt="" class="zoom-image"/>
 </a>
         </div>
         <div class="contentBox2"> 
@@ -260,7 +261,7 @@
 
       <div class="main3Contents">
         <div class="mapic">
-          <p>map pic</p>
+          <div id="map" style="width:100%; height:400px;"></div>
           
             <div class="location">
               <h2>경상남도 진주시 상대동</h2>
@@ -279,7 +280,7 @@
                 <span class="label">전화번호</span>
                 <div class="value">
                   <span>010-6681-1364</span>
-                  <span>055-757-6900</span>
+                    55-757-6900</span>
                 </div>
               </div>
               <div class="detail-item">
@@ -320,6 +321,18 @@
       </div>
     </footer>
     
-    
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        var map = new naver.maps.Map(document.getElementById('map'), {
+            center: new naver.maps.LatLng(35.1787823, 128.1124016), // 위도, 경도 순으로 변경
+            zoom: 15
+        });
+
+        var marker = new naver.maps.Marker({
+          position: new naver.maps.LatLng(35.1787823, 128.1124016),
+          map: map
+        });
+      });
+    </script>
   </body>
 </html>

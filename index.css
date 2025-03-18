@@ -32,12 +32,11 @@
     text-decoration: underline;
   }
   .zoom-image {
-    transition: transform 0.3s ease-in-out;
-}
-
-a:hover .zoom-image {
-    transform: scale(1.2); /* 1.2배 확대 */
-}
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+    
+  }
 
 
   .headerLeft ul {
@@ -215,14 +214,27 @@ section> .mainHead a {
   margin-bottom: 0;
 }
 
-.contentEdu {
+
+.contentEdu{
+
+  overflow: hidden;
   flex: 1; /* 모든 콘텐츠가 동일한 비율로 차지 */
+
 }
 
-.Edu {
+a:hover .Edu {
+  
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1); /* 크롬, 사파리 */
+  -moz-transform: scale(1.1);  /* 파이어폭스 */
+  -ms-transform: scale(1.1); /* IE */
+  -o-transform: scale(1.1);  /* 오페라 */
+  transition: transform 0.3s;
   max-width: 25rem; /* 이미지 최대 너비 제한 */
-  height: auto; /* 높이 자동 조절 */
+  /* height: auto; 높이 자동 조절 */
+
 }
+
 .contentEduExplain{
   margin-top: 0;
 }
