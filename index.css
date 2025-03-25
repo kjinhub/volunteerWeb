@@ -222,18 +222,7 @@ section> .mainHead a {
 
 }
 
-a:hover .Edu {
-  
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1); /* 크롬, 사파리 */
-  -moz-transform: scale(1.1);  /* 파이어폭스 */
-  -ms-transform: scale(1.1); /* IE */
-  -o-transform: scale(1.1);  /* 오페라 */
-  transition: transform 0.3s;
-  max-width: 25rem; /* 이미지 최대 너비 제한 */
-  /* height: auto; 높이 자동 조절 */
 
-}
 
 .contentEduExplain{
   margin-top: 0;
